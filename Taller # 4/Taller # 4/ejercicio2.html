@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio # 2</title>
+</head>
+<body>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #e9e9e9;
+        }
+
+   
+        .header {
+            background: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 30px 10px;
+        }
+
+        .header h1 {
+            font-size: 60px;
+            margin: 0;
+        }
+
+   
+        .logo {
+            position: absolute;
+            left: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 1;
+        }
+
+        .logo span:first-child {
+            color: orange;
+        }
+
+        .logo span:last-child {
+            color: yellow;
+        }
+
+    
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+            flex-wrap: wrap;
+        }
+
+      
+        .card {
+            background: white;
+            width: 220px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h3 {
+            color: #e91e63;
+            margin: 0 0 10px;
+        }
+
+        .card-content p {
+            font-size: 13px;
+            color: #555;
+        }
+
+      
+        .footer {
+            background: #2c003e;
+            color: #ff2b4a;
+            text-align: center;
+            padding: 30px 10px;
+            position: relative;
+        }
+
+        .footer h2 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        
+        .footer .logo {
+            left: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 40px;
+            }
+
+            .footer h2 {
+                font-size: 30px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+
+        <h1>Responsive Cards</h1>
+    </div>
+
+    <div class="container">
+
+        <div class="card">
+            <img src="recursos/pagina2/1.jpeg">
+            <div class="card-content">
+                <h3>Card One</h3>
+                <p>Enhance your web design skills and add a touch of elegance to your projects.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="recursos/pagina2/2.jpeg">
+            <div class="card-content">
+                <h3>Card Two</h3>
+                <p>Enhance your web design skills and add a touch of elegance to your projects.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="recursos/pagina2/3.jpeg">
+            <div class="card-content">
+                <h3>Card Three</h3>
+                <p>Enhance your web design skills and add a touch of elegance to your projects.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="recursos/pagina2/4.jpeg">
+            <div class="card-content">
+                <h3>Card Four</h3>
+                <p>Enhance your web design skills and add a touch of elegance to your projects.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="logo">
+            <span>HTML</span><br>
+            <span>CSS</span>
+        </div>
+        <h2>Using Flexbox</h2>
+    </div>
+
+</body>
+</html>
